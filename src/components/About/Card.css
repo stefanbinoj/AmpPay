@@ -1,0 +1,46 @@
+/* CardContainer.css */
+
+.card-container {
+  cursor: default;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+  }
+  
+  .card {
+    
+    font-family: 'Roboto', sans-serif; /* Add a specific font-family */
+    position: relative;
+    width: 350px; /* Adjusted width for better balance */
+    height: 500px; /* Adjusted height for better balance */
+    padding: 2em; /* Reduced padding for better content-to-card ratio */
+    color: #000000;
+    background: linear-gradient(#4a90e2, #4169e1);
+    text-align: justify; /* Align text to justify for cleaner appearance */
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 10px;
+  }
+  
+  .card h3 {
+    font-size: 30px;
+    margin-bottom: 10px; /* Add some space below the heading */
+  }
+  
+  .card p {
+    
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.4; /* Adjust line-height for better readability */;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
