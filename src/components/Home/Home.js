@@ -36,7 +36,7 @@ const Home = () => {
     return (
         <div className="content-container">
             <h2>AmpPay - Transforming Energy Awareness For Sustainable Living</h2>
-            <img src={img} alt="AmpPay Image" />
+            <img src={img} />
 
             <p className="quote">
                 {randomQuote}
