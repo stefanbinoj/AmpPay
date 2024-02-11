@@ -2,7 +2,7 @@ import Card from './Card';
 import './About.css';
 import Features from './Features';
 
-import AOS from 'aos';
+
 
 import 'aos/dist/aos.css';
 const Home = () => {
