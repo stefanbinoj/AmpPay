@@ -6,13 +6,13 @@ const NavBar = () => {
                 <h1>logo</h1>
             </div>
             <div className="nav container">
-                <a href="/">Home</a>
-                <a href="/">About us</a>
-                <a href="/">Team</a>
-                <a href="/">Contact</a>
+                <a href="#">Home</a>
+                <a href="#">About us</a>
+                <a href="#">Team</a>
+                <a href="#">Contact</a>
             </div>
             <div className="login-btn">
-                <a href="/">Login</a>
+                <a href="#">Login</a>
             </div>
 
         </div>
