@@ -55,9 +55,9 @@ const MemberCard = ({ name, position, imgSrc, github, linkedin, instagram }) => 
         <p className="text-blk name">{name}</p>
         <p className="text-blk position">{position}</p>
         <div className="social-media-links">
-          {github && <a href={github}  target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" /></a>}
-          {linkedin && <a href={linkedin} target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/023/986/900/original/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" alt="LinkedIn" /></a>}
-          {instagram && <a href={instagram}  target="_blank"><img src="https://w7.pngwing.com/pngs/397/474/png-transparent-black-snapchat-logo-illustration-computer-icons-instagram-logo-area-smile-thumbnail.png" alt="Instagram" /></a>}
+          {github && <a href={github} rel="noreferrer" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" /></a>}
+          {linkedin && <a href={linkedin} rel="noreferrer" target="_blank"><img src="https://static.vecteezy.com/system/resources/previews/023/986/900/original/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.png" alt="LinkedIn" /></a>}
+          {instagram && <a href={instagram} rel="noreferrer" target="_blank"><img src="https://w7.pngwing.com/pngs/397/474/png-transparent-black-snapchat-logo-illustration-computer-icons-instagram-logo-area-smile-thumbnail.png" alt="Instagram" /></a>}
         </div>
       </div>
     </div>
