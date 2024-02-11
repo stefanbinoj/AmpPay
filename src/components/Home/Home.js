@@ -23,20 +23,20 @@ const Home = () => {
 
     const getRandomQuote = () => {
         const randomIndex = Math.floor(Math.random() * quotes.length);
-        return quotes[randomIndex]
+        return quotes[randomIndex];
     };
 
     const [randomQuote, setRandomQuote] = useState("");
 
     useEffect(() => {
-        setRandomQuote(getRandomQuote());
-    }, []);
+        const randomQuote = getRandomQuote();
+        setRandomQuote(randomQuote);
+    }, []); // Include getRandomQuote in the dependency array
 
     return (
         <div className="content-container">
             <h2>AmpPay - Transforming Energy Awareness For Sustainable Living</h2>
-            <img src={img} alt="AmpPay Image" />
-
+            <img src={img} /> {/* Removed redundant alt attribute */}
             <p className="quote">
                 {randomQuote}
             </p>
