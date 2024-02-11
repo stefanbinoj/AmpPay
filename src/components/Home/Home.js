@@ -31,12 +31,12 @@ const Home = () => {
     useEffect(() => {
         const randomQuote = getRandomQuote();
         setRandomQuote(randomQuote);
-    }, []); // Include getRandomQuote in the dependency array
+    }, [getRandomQuote]); // Include getRandomQuote in the dependency array
 
     return (
         <div className="content-container">
             <h2>AmpPay - Transforming Energy Awareness For Sustainable Living</h2>
-            <img src={img} /> {/* Removed redundant alt attribute */}
+            <img src={img} alt='hi' /> {/* Removed redundant alt attribute */}
             <p className="quote">
                 {randomQuote}
             </p>
