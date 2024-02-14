@@ -1,16 +1,19 @@
 import './App.css';
-import NavBar from './components/NavBar/NavBar';
-import Home from './components/Home/Home';
-import About from './components/About/About';
-import Team from './components/Team/Team';
-import Contact from './components/Contact/Contact';
-import 'aos/dist/aos.css';
+import Dashboard from './components/Dashboard';
+import Main from './components/Main';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
 function App() {
   return (
     <div className="App">
-      <NavBar />
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }

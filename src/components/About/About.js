@@ -7,19 +7,10 @@ import Features from './Features';
 import 'aos/dist/aos.css';
 const Home = () => {
     return (
-    <div>
-        <div>
-            <div data-aos="fade-in" data-aos-delay="200">
-            <Card /> 
-            </div>
-            <div data-aos="fade-in" data-aos-delay="200">
-            <Features />
-            </div>
-        </div>
-
+    <div>   
+        <Card /> 
+        <Features />
     </div>
-        
-        
     )
 }
 export default Home;
