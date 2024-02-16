@@ -1,0 +1,33 @@
+/* CarbonFootprint.css */
+.carbon-footprint-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .carbon-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .carbon-icon {
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  
+  .carbon-text {
+    font-size: 18px;
+  }
+  
+  .carbon-value {
+    font-size: 24px;
+    color: #007bff;
+    font-weight: bold;
+  }
+  

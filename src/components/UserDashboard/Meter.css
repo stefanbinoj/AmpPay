@@ -1,0 +1,20 @@
+/* Meter.css */
+.meter-container {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #000;
+    position: relative;
+  }
+  
+  .meter {
+    height: 100%;
+  }
+  
+  .meter-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
