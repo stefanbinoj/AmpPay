@@ -18,7 +18,7 @@
   
   .carbon-icon {
     font-size: 40px;
-    margin-right: 10px;
+    margin-right: 10px; 
   }
   
   .carbon-text {
@@ -31,3 +31,14 @@
     font-weight: bold;
   }
   
+  .carbon-icon {
+    font-size: 40px;
+    margin-right: 10px;
+    background: linear-gradient(to right, green, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .high-consumption {
+    color: red;
+  }

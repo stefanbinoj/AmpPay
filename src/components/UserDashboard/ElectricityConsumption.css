@@ -1,0 +1,79 @@
+.electricity-consumption-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-container {
+    flex: 0 0 auto;
+    margin-right: 20px;
+  }
+  
+  .electricity-icon {
+    font-size: 24px;
+    color: #f39c12; /* Yellow */
+  }
+  
+  .details-container {
+    flex: 1;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .label {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .info-icon {
+    font-size: 16px;
+    color: #3498db; /* Blue */
+    cursor: pointer;
+  }
+  
+  .bar-container {
+    position: relative;
+    background-color: #fff;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #3498db; /* Blue */
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .usage-indicator {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #666;
+    display: flex;
+    align-items: center;
+  }
+  
+  .trend-icon {
+    margin-left: 5px;
+    font-size: 16px;
+  }
+  
+  /* Smiley face */
+  .smiley-icon {
+    margin-left: 5px;
+    font-size: 20px;
+  }
+  
