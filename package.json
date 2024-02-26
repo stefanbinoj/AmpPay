@@ -18,6 +18,8 @@
     "react-chart": "^0.0.1",
     "react-chartjs-2": "^3.3.0",
     "react-dom": "^18.2.0",
+    "react-gauge-component": "^1.2.0",
+    "react-icons": "^5.0.1",
     "react-intersection-observer": "^9.5.3",
     "react-router-dom": "^6.22.0",
     "react-scripts": "^5.0.1",

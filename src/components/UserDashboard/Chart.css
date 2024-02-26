@@ -1,4 +1,10 @@
 .chart-container {
-    margin-top: 65px;
-    width: 500px;
+    margin-top: 35px;
+   
+    margin-left: 20px;
+}
+
+.chart-container .chart {
+    margin-top: 50px;
+    margin-left: 15px;
 }

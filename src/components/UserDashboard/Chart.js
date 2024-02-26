@@ -16,9 +16,16 @@ const EnergyMeterChart = () => {
   };
 
   const chartStyle = {
-    width: '400px', // Set width to 250 pixels
-    height: '300px', // Set height to 250 pixels
+    width: '450px', // Set width to 250 pixels
+    height: '280px', // Set height to 250 pixels
     border: '1px solid #ccc', // Add a border for visualization
+    position: 'relative'
+  };
+  const todayTextStyle = {
+    position: 'absolute', // Set position to absolute
+    top: '30px', // Adjust top positioning as needed
+    left: '45px', // Adjust left positioning as needed
+    fontSize: '20px',
   };
 
   const options = {
@@ -32,8 +39,10 @@ const EnergyMeterChart = () => {
   return (
     
     <div style={chartStyle} className="chart-container">
-      <h2>Energy Meter Chart</h2>
-      <Line data={data} options={options} />
+      <h3 style={todayTextStyle}>TODAY</h3>
+      <div style={{ top: '0px' }}  className='chart'><Line data={data} options={options} /></div>
+
+      
     </div>
   );
 };
