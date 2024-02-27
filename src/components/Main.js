@@ -4,17 +4,14 @@ import About from "./About/About"
 import Team from "./Team/Team"
 import Contact from "./Contact/Contact"
 import React from 'react';
-
+import './Main.css'
 
 const Main = () => {
     return (
-        <div>
+        <div className="main-container">
             
             <NavBar />
-            <Home />
-            <About />
-            <Team />
-            <Contact />
+          <Home />
         </div>
     )
 }
