@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const EnergyUsageComponent = ({ userId }) => {
-  const [energyUsageData, setEnergyUsageData] = useState([]);
+  const [latestUsage, setLatestUsage] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -12,8 +12,15 @@ const EnergyUsageComponent = ({ userId }) => {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`http://127.0.0.1:8000/api/energyusage/`);
-      setEnergyUsageData(response.data);
+      const response = await axios.get(`http://127.0.0.1:8000/api/energyusage/?user=${userId}`);
+      // Filter the latest usage from the response data
+      const latest = response.data.reduce((latest, current) => {
+        if (!latest || current.datetime > latest.datetime) {
+          return current;
+        }
+        return latest;
+      }, null);
+      setLatestUsage(latest);
     } catch (error) {
       setError(error.message);
     } finally {
@@ -31,15 +38,15 @@ const EnergyUsageComponent = ({ userId }) => {
 
   return (
     <div>
-      <h2>Energy Usage Data</h2>
-      <ul>
-        {energyUsageData.map(usage => (
-          <li key={usage.id}>
-            User: {usage.user}, Datetime: {usage.datetime}, Usage Value: {usage.usage_value}
-            {/* Render other fields here */}
+      {latestUsage ? (
+        <ul>
+          <li>
+            User: {latestUsage.username}, Datetime: {latestUsage.datetime}, Usage Value: {latestUsage.usage_value}, irms_current: {latestUsage.irms_current}, irms_power: {latestUsage.irms_power}, peak_power: {latestUsage.peak_power}
           </li>
-        ))}
-      </ul>
+        </ul>
+      ) : (
+        <div>No data found for this user.</div>
+      )}
     </div>
   );
 };

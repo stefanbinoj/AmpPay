@@ -30,9 +30,7 @@ const Dashboard = () => {
             <ElectricityConsumption value={70} />
               <EnergyUsageComponent userId={"Arjun"}/>
             */}
-            <Gauge />
-            <Power />
-            <Prediction />
+            <EnergyUsageComponent userId={'Arjun'}/>
            
            
            
