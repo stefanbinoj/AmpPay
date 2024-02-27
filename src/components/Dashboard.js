@@ -3,6 +3,7 @@ import NavBar from "./NavBar/NavBar"
 import CarbonFootprint from "./UserDashboard/Carbon";
 import EnergyMeterChart from "./UserDashboard/Chart"
 import ElectricityConsumption from "./UserDashboard/ElectricityConsumption";
+import EnergyUsageComponent from "./UserDashboard/EnergyUsageComponent";
 import Gauge from "./UserDashboard/Gauge";
 
 
@@ -25,8 +26,10 @@ const Dashboard = () => {
             {/* 
             
             <ElectricityConsumption value={70} />
+             <Gauge />
             */}
-            <Gauge />
+           
+            <EnergyUsageComponent userId={"Arjun"}/>
            
             
         </div>
