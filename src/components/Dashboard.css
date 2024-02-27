@@ -1,0 +1,13 @@
+.dashboard {
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+   padding-left: 130px;
+   padding-right: 130px;
+   margin-top: 30px;
+}
+@media screen and (max-width: 600px) { /* Adjust the max-width as needed */
+    .dashboard {
+        grid-template-columns: 1fr; /* Change to 1 column layout for smaller screens */
+    }
+}

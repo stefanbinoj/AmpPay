@@ -3,14 +3,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 300px; /* Adjust the width as needed */
+    width: 25vw; /* Adjust the width as needed */
     height: 400px; /* Adjust the height as needed */
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-left: 20px;
-    margin-top: 20px;
+    
   }
   .gauge-card p {
     width: 100%;
