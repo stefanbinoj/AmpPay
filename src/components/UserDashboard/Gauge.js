@@ -4,7 +4,7 @@ import { FaHome } from 'react-icons/fa';
 import './Gauge.css'; // Import CSS file for custom styles
 
 function Gauge() {
-  const arcValue = 67; // Set your dynamic arc value here
+  const arcValue = 27; // Set your dynamic arc value here
 
   // Define a function to determine the color gradient based on the arc value
   const getNeedleColor = () => {
