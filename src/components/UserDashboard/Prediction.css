@@ -1,13 +1,106 @@
 .prediction-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 25vw; /* Adjust the width as needed */
-    height: 400px; /* Adjust the height as needed */
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 25vw; /* Adjust the width as needed */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding:15px;
+  padding-top: 0px;
+  
    
   }
+  .prediction-details{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+  .prediction-details h1{
+    color:green;
+    font-size: 24px;
+    margin-left: auto;
+    font-weight: bold;
+  }
+  .prediction-card hr{
+    color:grey;
+    margin: 0px 0px;
+  }
+  .prediction-card p{
+    font-size: 12px;
+    font-weight: bold;
+    text-align: left;
+    margin:0px;
+    margin-top:20px;
+    text-align: left;
+    
+  
+  }
+  
+  .rupees-small{
+    margin-left:auto;
+  }
+  .larger-one{
+    width: 55%;
+  }
+  .smaller-one{
+    width: 40%;
+  }
+  .rupees-big{
+    margin-left: 40px;
+    margin-top:20px
+  
+  }
+  .prediction-details h2{
+    font-size: 56px;
+  }
+  .price-details{
+    margin-top: -30px;
+  }
+  #month-details{
+    margin-top: 20px;
+    padding-top: 0px;
+  }
+  .prediction-details h3{
+    font-size: 32px;
+    padding-left: 10px;
+  }
+  #sofartodaycontainer{
+    margin-top: -5px;
+  }
+  .space{
+    margin-left:110px;
+  }
+  .footer-space{
+    margin-bottom:30px
+  }
+  #sofartodayheading{
+    font-size: 16px;
+    color: green;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: -10px;
+  }
+  .prediction-detailsbottomsection{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+#bottom-rupees{
+  margin-top: 25px;
+}
+.prediction-detailsbottomsection h3{
+  font-size: 40px;
+  margin-left: 10px;
+  margin-top: 15px;
+  color: red;
+}
+.prediction-card h5{
+  margin-top: -5px;
+  font-size: 11px;
+  color: black;
+  font-weight:600;
+  
+}
+.margin-adder{
+  margin-top: 30px !important;
+}
