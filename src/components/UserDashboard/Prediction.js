@@ -6,7 +6,14 @@ function Prediction() {
 
   return (
     <div className="prediction-card">
-        <p>How am i doing?</p>
+      <div >
+        <h1>Cost Prediction</h1>
+        <img src=""/>
+      </div>
+      <h2>HOUSE COST</h2>
+      <div>
+        <p></p>
+      </div>
     </div>
   );
 }
