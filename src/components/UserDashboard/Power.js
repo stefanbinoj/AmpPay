@@ -1,6 +1,7 @@
 import './Power.css'
 import React from 'react';
 import CarbonFootprint from './Carbon';
+import PeakPower from './PeakPower';
 function Power() {
 
 
@@ -45,6 +46,7 @@ function Power() {
         </div>
         <div>
         <div className='power-details'>
+          <CarbonFootprint />
           
         </div>
         </div>

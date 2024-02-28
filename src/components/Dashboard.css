@@ -54,3 +54,9 @@
 #container h5{
     color: #4E8397;
 }
+#container h6{
+    font-size: 26px;
+    font-weight: bold;
+    color: #303030;
+
+}
