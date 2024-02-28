@@ -1,30 +1,35 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 import "./Chart.css"
+
 const EnergyMeterChart = () => {
   const data = {
-    labels: ['0:00', '3:00', '6:00', '9:00', '12:00', '15:00', '18:00', '21:00', '24:00'],
+    labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
     datasets: [
       {
         label: 'kWh Consumption',
-        data: [0.5, 0.7, 1.2, 0.8, 0.4, 0.3, 0.2, 0.1, 0.4],
+        data: [0.5, 0.7, 1.2, 0.8, 0.4, 0.3],
         fill: false,
         borderColor: 'rgba(75, 192, 192, 1)',
+        pointBackgroundColor: 'black', // Change point color to black
         tension: 0.1
       },
     ],
   };
 
   const chartStyle = {
-    width: '450px', // Set width to 250 pixels
-    height: '280px', // Set height to 250 pixels
-    border: '1px solid #ccc', // Add a border for visualization
-    position: 'relative'
+    width: '450px',
+    height: '280px',
+    border: '1px solid #ccc',
+    position: 'relative',
+    left: "520px",
+    top: "-10px",
   };
+
   const todayTextStyle = {
-    position: 'absolute', // Set position to absolute
-    top: '30px', // Adjust top positioning as needed
-    left: '45px', // Adjust left positioning as needed
+    position: 'absolute',
+    top: '30px',
+    left: '45px',
     fontSize: '20px',
   };
 
@@ -32,17 +37,32 @@ const EnergyMeterChart = () => {
     scales: {
       y: {
         beginAtZero: true,
+        ticks: {
+          color: 'black', // Change color of scale labels to black
+        },
+      },
+      x: {
+        ticks: {
+          color: 'black', // Change color of scale labels to black
+        },
+      },
+    },
+    plugins: {
+      legend: {
+        labels: {
+          color: 'black', // Change color of legend labels to black
+        },
       },
     },
   };
+  
 
   return (
-    
     <div style={chartStyle} className="chart-container">
       <h3 style={todayTextStyle}>TODAY</h3>
-      <div style={{ top: '0px' }}  className='chart'><Line data={data} options={options} /></div>
-
-      
+      <div style={{ top: '0px', color: "black" }} className='chart'>
+        <Line data={data} options={options} />
+      </div>
     </div>
   );
 };

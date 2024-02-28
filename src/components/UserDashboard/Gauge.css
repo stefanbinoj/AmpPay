@@ -43,6 +43,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
   }
   .gauge-details p{
     font-size: 12px;
@@ -68,6 +69,6 @@
     color:orangered
   }
   .bottom-para{
-    margin-left: -60px !important;
-    margin-right: 185px !important;
+    margin-left: 0px !important;
+    margin-right: 35px !important;
   }

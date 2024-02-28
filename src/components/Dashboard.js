@@ -10,6 +10,7 @@ import Gauge from "./UserDashboard/Gauge";
 
 
 import Meter from "./UserDashboard/Meter"
+import NavBar2 from './UserDashboard/NavBar2';
 import Power from "./UserDashboard/Power";
 import Prediction from './UserDashboard/Prediction';
 import Rms from "./UserDashboard/Rms";
@@ -41,6 +42,7 @@ const Dashboard = () => {
            <Gauge />
            <Power />
            <Prediction/>*/}
+           <NavBar2 />
             <Gauge />
            <Power />
            <Prediction/>

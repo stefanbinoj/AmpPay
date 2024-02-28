@@ -1,12 +1,50 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import GaugeComponent from 'react-gauge-component';
 import { FaHome } from 'react-icons/fa';
-import './Gauge.css'; // Import CSS file for custom styles
+import axios from 'axios';
+import './Gauge.css';
+import baseUrl from '../../urls';
 
 function Gauge() {
-  const arcValue = 27; // Set your dynamic arc value here
+  const [arcValue, setArcValue] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [latestToday, setLatestToday] = useState({ usage_value: 0 });
+  const [earliestToday, setEarliestToday] = useState({ usage_value: 0 });
 
-  // Define a function to determine the color gradient based on the arc value
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`${baseUrl}/api/energyusage/?user=Arjun`);
+        const today = new Date().toISOString().split('T')[0];
+        const todayUsage = response.data.filter(data => data.datetime.startsWith(today));
+        let earliest = todayUsage[0] || { usage_value: 0 };
+        let latest = todayUsage[0] || { usage_value: 0 };
+        for (const data of todayUsage) {
+          if (data.datetime < earliest.datetime) {
+            earliest = data;
+          }
+          if (data.datetime > latest.datetime) {
+            latest = data;
+          }
+        }
+        setLatestToday(latest);
+        setEarliestToday(earliest);
+        setArcValue(earliest.usage_value);
+      } catch (error) {
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+  
+    fetchData();
+  
+    const interval = setInterval(fetchData, 1000);
+  
+    return () => clearInterval(interval);
+  }, []);
+
   const getNeedleColor = () => {
     if (arcValue < 33) {
       return 'green';
@@ -26,7 +64,7 @@ function Gauge() {
         <hr></hr>
         <div class="gauge-details">
           <p>CONSUMPTION : </p>
-          <h2>20 UNITS</h2>
+          <h2>{arcValue} UNITS</h2>
         </div>
       <div className="gauge-container">
         <GaugeComponent
@@ -46,7 +84,7 @@ function Gauge() {
             borderRadius: '50%',
             marginBottom:"40px",
             padding: '5px',
-            color: getNeedleColor(), // Set the color dynamically based on the arc value
+            color: getNeedleColor(),
           }}
         />
       </div>
