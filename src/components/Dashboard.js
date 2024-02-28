@@ -1,6 +1,5 @@
-import EnergyMeterChart from './UserDashboard/Chart';
-import './Dashboard.css';
-import NavBar from "./NavBar/NavBar";
+import './Dashboard.css'
+import NavBar from "./NavBar/NavBar"
 import CarbonFootprint from "./UserDashboard/Carbon";
 
 import ElectricityConsumption from "./UserDashboard/ElectricityConsumption";
@@ -40,7 +39,9 @@ const Dashboard = () => {
            <Gauge />
            <Power />
            <Prediction/>*/}
-           
+            <Gauge />
+           <Power />
+           <Prediction/>
            
            
             
