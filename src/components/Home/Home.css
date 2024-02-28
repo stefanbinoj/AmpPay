@@ -12,14 +12,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 93vh;
     background-color: rgba(0, 0, 0, 1); /* Black color with full opacity */
 }
 
 img {
     margin-top: -100px;
     width: 100%;
-    max-height: 100vh;
+    height: 105vh;
     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
     opacity: 0.5; /* Adjust the image opacity as needed */
 }
@@ -37,3 +37,53 @@ img {
     font-style: oblique;
     font-weight: bolder;
  }
+
+ .home-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 200px;
+    padding-right: 200px;
+    gap: 0px;
+    margin-top: -150px;
+
+ }
+
+
+.home-card {
+    width: 170px;
+    height: 130px;
+    margin-top: -50px;
+    left: 20px; /* Adjust the left position of the card */
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 3; /* Ensure the card is above other content */
+    background: rgba( 255, 255, 255, 0.3 );
+    background: rgba( 255, 255, 255, 0.9 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+}
+
+.home-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.home-card p {
+    font-size: 16px;
+    margin: 0;
+}
+
+#pay-bill-icon {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.home-card img {
+    text-decoration: none;
+    width: 20px;
+}

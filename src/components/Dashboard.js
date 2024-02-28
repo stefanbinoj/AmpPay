@@ -4,6 +4,7 @@ import CarbonFootprint from "./UserDashboard/Carbon";
 import EnergyMeterChart from "./UserDashboard/Chart"
 import ElectricityConsumption from "./UserDashboard/ElectricityConsumption";
 import EnergyUsageComponent from "./UserDashboard/EnergyUsageComponent";
+import EnergyUsagePrediction1 from './UserDashboard/EnergyUsagePrediction1';
 
 import Gauge from "./UserDashboard/Gauge";
 
@@ -32,10 +33,16 @@ const Dashboard = () => {
              <Gauge />
             */}
            
-           
+           {/*
+           <EnergyUsagePrediction1 />
            <Gauge />
            <Power />
+           <Prediction/>*/}
+              <Gauge />
+           <Power />
            <Prediction/>
+           
+           
             
            
             
