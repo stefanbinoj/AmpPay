@@ -1,3 +1,4 @@
+import { Chart } from 'chart.js';
 import './Dashboard.css'
 import NavBar from "./NavBar/NavBar"
 import CarbonFootprint from "./UserDashboard/Carbon";
@@ -41,6 +42,7 @@ const Dashboard = () => {
             <Gauge />
            <Power />
            <Prediction/>
+           
            
            
             

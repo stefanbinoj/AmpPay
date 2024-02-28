@@ -41,9 +41,11 @@
   }
   .larger-one{
     width: 55%;
+    margin-left: 20px;
   }
   .smaller-one{
     width: 40%;
+  
   }
   .rupees-big{
     margin-left: 40px;
@@ -104,4 +106,8 @@
 }
 .margin-adder{
   margin-top: 30px !important;
+}
+.adding-leftspace{
+  margin-left: 30px;
+  margin-right: 100px;
 }
