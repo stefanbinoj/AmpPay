@@ -116,6 +116,7 @@ function Power() {
         </div>
         <div>
         <div className='power-details'>
+          <CarbonFootprint />
           
         </div>
         </div>
