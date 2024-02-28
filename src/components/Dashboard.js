@@ -38,7 +38,7 @@ const Dashboard = () => {
            <Gauge />
            <Power />
            <Prediction/>*/}
-              <Gauge />
+            <Gauge />
            <Power />
            <Prediction/>
            

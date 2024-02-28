@@ -1,11 +1,12 @@
 .gauge-card {
     align-items: center;
-    width: 25vw; /* Adjust the width as needed */
+    width: 28vw; /* Adjust the width as needed */
     padding: 15px;
     padding-top: 0px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 600px;
     
   }
   
@@ -24,9 +25,10 @@
   .GaugeMainHeading{
     color:green;
     font-size: 24px;
-    text-align: left;
     font-weight: bold;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 
   }
   .gauge-details hr{
