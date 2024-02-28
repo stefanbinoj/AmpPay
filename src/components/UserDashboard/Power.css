@@ -7,6 +7,7 @@
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-top:-35px;
+    background-color: #F1FADA;
     
    
   }
@@ -69,4 +70,6 @@
   color: black;
 
 }
-
+#rmshead{
+  color: #005B44 !important;
+}
