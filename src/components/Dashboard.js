@@ -13,6 +13,7 @@ import Meter from "./UserDashboard/Meter"
 import Power from "./UserDashboard/Power";
 import Prediction from './UserDashboard/Prediction';
 import Rms from "./UserDashboard/Rms";
+import Togglebar from './UserDashboard/Togglebar';
 
 
 
@@ -20,6 +21,7 @@ import Rms from "./UserDashboard/Rms";
 const Dashboard = () => {
     const consumption = 351;
     return (
+        <div>
         <div className='dashboard'>
             {/*
             <NavBar /> 
@@ -44,10 +46,17 @@ const Dashboard = () => {
            <Prediction/>
            
            
+           
             
            
             
         </div>
+        <hr style={{ color: 'grey', marginTop: '100px', width:"97%",borderWidth: '3px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)' }}></hr>
+        <Togglebar />
+
+        </div>
+        
+        
     )
 }
 export default Dashboard
