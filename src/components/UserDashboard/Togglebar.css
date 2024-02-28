@@ -4,12 +4,17 @@
     justify-content: center;
 }
 .togglebar-card a{
+    width:260px;
     font-weight: bold;
     margin:20px;
     font-size:22px;
-    color: gray;
+    color: #845EC2;
     text-decoration: none;
+    background-color: #F1FADA;
     margin-top: 50px;
     box-shadow: 2px 2px 4px 3px rgba(0, 0, 0, 0.3);
     padding: 15px;
+    border-radius: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
