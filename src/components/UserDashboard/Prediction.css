@@ -6,6 +6,7 @@
   padding:15px;
   padding-top: 0px;
   height: 600px;
+  background-color: #F1FADA;
   
    
   }
@@ -68,6 +69,7 @@
   }
   #sofartodaycontainer{
     margin-top: -5px;
+    
   }
   .space{
     margin-left:110px;
@@ -76,8 +78,9 @@
     margin-bottom:30px
   }
   #sofartodayheading{
+    
     font-size: 16px;
-    color: green;
+    color: #9B89B3;
     text-align: center;
     margin-top: 15px;
     margin-bottom: -10px;

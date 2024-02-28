@@ -6,7 +6,7 @@ function Togglebar() {
     return (
         <div className='togglebar-card'>
             <a href='#'>GRAPH</a>
-            <a href=''>LEADERBOARDS</a>
+            <a href='#'>LEADERBOARDS</a>
         </div>
     )
 }

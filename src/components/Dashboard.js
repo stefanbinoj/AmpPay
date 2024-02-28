@@ -21,8 +21,8 @@ import Togglebar from './UserDashboard/Togglebar';
 const Dashboard = () => {
     const consumption = 351;
     return (
-        <div>
-        <div className='dashboard'>
+        <div id="container">
+            <div className='dashboard'>
             {/*
             <NavBar /> 
             <EnergyMeterChart />
@@ -50,9 +50,10 @@ const Dashboard = () => {
             
            
             
-        </div>
-        <hr style={{ color: 'grey', marginTop: '100px', width:"97%",borderWidth: '3px', boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)' }}></hr>
-        <Togglebar />
+            </div>
+            <div className='bottom-section'>
+                <Togglebar />
+            </div>
 
         </div>
         
