@@ -1,7 +1,8 @@
-import './Dashboard.css'
-import NavBar from "./NavBar/NavBar"
+import EnergyMeterChart from './UserDashboard/Chart';
+import './Dashboard.css';
+import NavBar from "./NavBar/NavBar";
 import CarbonFootprint from "./UserDashboard/Carbon";
-import EnergyMeterChart from "./UserDashboard/Chart"
+
 import ElectricityConsumption from "./UserDashboard/ElectricityConsumption";
 import EnergyUsageComponent from "./UserDashboard/EnergyUsageComponent";
 import EnergyUsagePrediction1 from './UserDashboard/EnergyUsagePrediction1';
@@ -34,13 +35,12 @@ const Dashboard = () => {
             */}
            
            {/*
+           <EnergyMeterChart />
            <EnergyUsagePrediction1 />
            <Gauge />
            <Power />
            <Prediction/>*/}
-            <Gauge />
-           <Power />
-           <Prediction/>
+           
            
            
             

@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import './Home.css';
 import AOS from 'aos';
+import { Color } from '@kurkle/color';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     useEffect(() => {
@@ -10,27 +12,31 @@ const Home = () => {
     return (
         <div className="home-container">
             <div className="image-overlay"></div>
-            <img src='https://static.vecteezy.com/system/resources/previews/024/068/847/non_2x/sunset-energy-planning-a-group-of-people-overlooking-city-with-wind-turbines-in-the-background-ai-generated-free-photo.jpg' alt="sunset energy planning"/>
-            <div className='intro' data-aos="fade-right">
-                <p>Simplify. Transact. Impact.</p>
+            <div className='home-intro-p'>
+            <p>MONITORING</p>
+            <p style={{ marginTop: '195px' }}>EFFICIENCY</p>
+            <p style={{ marginTop: '270px', color: "#0A4033" }}>EMBRACING</p>
+            <p style={{ marginTop: '325px', color: "#0A4033" }}>RESILIENCE</p>
+            <a href='/dashboard'>Find out more</a>
             </div>
-            <div className='home-card-container' data-aos="fade-up">
-                <div className='home-card' data-aos="fade-up" data-aos-delay="1500">
-                    <svg id='pay-bill-icon' xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 24 24">
-                        <path fill="none" stroke="black" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.75" d="M16.154 7.154c-.949-.949-2.619-1.608-4.154-1.65m-4.154 10.65c.893 1.19 2.552 1.868 4.154 1.926m0-12.576c-1.826-.049-3.461.778-3.461 3.034c0 4.154 7.615 2.077 7.615 6.231c0 2.37-2.027 3.387-4.154 3.31m0-12.575V3m0 15.08V21" />
-                    </svg>
-                    <h2>Pay Bill</h2>
-                </div>
-                <div className='home-card' data-aos="fade-up" data-aos-delay="1600">
-                    <h2>Ways to Save</h2>
-                </div>
-                <div className='home-card' data-aos="fade-up" data-aos-delay="1700">
-                    <h2>Outages</h2>
-                </div>
-                <div className='home-card' data-aos="fade-up" data-aos-delay="1800">
-                    <h2>Usage</h2>
-                </div>
-            </div>
+
+           <h3>WE'RE ON IT.</h3>
+           <h3 style={{ marginLeft: '395px', color: "#7EC389" }}>NOW.</h3>
+
+            <svg className='svg-img2' height="420" width="600" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="200,10 700,10 700,380 200,380" style={{ fill: 'rgb(10, 64, 51)' }} />
+                Sorry, your browser does not support inline SVG.
+                </svg>
+
+
+            <svg className='svg-img' xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="600" height="510" viewBox="0,0,256,256">
+                <g fill="#7ec389" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none" style={{ mixBlendMode: 'normal' }}>
+                    <g transform="translate(0,0) scale(5.33333,5.33333)">
+                        <path d="M37,39h-26l-6,6v-34c0,-3.3 2.7,-6 6,-6h26c3.3,0 6,2.7 6,6v22c0,3.3 -2.7,6 -6,6z"></path>
+                    </g>
+                </g>
+            </svg>
+            <img src='https://www.eneco.com/~/media/eneco-nl-over-ons/image/wind-turbine-drone.png?la=en&w=1920&hash=050FAF6D9CE2E0FFFB011A3C51817EA0' alt="sunset energy planning"/>
         </div>
     );
 };
