@@ -12,11 +12,12 @@
   
   
   .gauge-container {
-    margin-top: 10px; /* Adjust the margin-top to position the gauge */
+    margin-top: -15px; /* Adjust the margin-top to position the gauge */
   }
   
   .icon-container {
-    margin-top: -70px;
+    margin-top: -80px;
+    margin-bottom: -35px;
     margin-left: 20px;
     display: flex;
     align-items: center;
@@ -59,8 +60,13 @@
     
     display: flex;
     flex-direction: column ;
-    padding-bottom:10px
+    padding-bottom:10px;
+    
   }
   .gauge-details span{
     color:orangered
+  }
+  .bottom-para{
+    margin-left: -60px !important;
+    margin-right: 185px !important;
   }

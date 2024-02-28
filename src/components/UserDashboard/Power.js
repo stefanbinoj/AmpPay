@@ -1,6 +1,6 @@
 import './Power.css'
 import React from 'react';
-
+import CarbonFootprint from './Carbon';
 function Power() {
 
 
@@ -15,7 +15,45 @@ function Power() {
           <svg className='small-timer' xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 48 48"><g fill="none" stroke="#766f6f" stroke-linejoin="round" stroke-width="4"><path d="M24 44c11.046 0 20-8.954 20-20S35.046 4 24 4S4 12.954 4 24s8.954 20 20 20Z"/><path stroke-linecap="round" d="M24.008 12v12.01l8.479 8.48"/></g></svg>
           <p>10:35:<span>23</span></p>
         </div>
+        <div className='power-details'>
+          <div className='equalone'>
+            <h2>IRMS</h2>
+            <p id="irms-p">CURRENT</p>
+          </div>
+          <div>
+            <p className='justhyphen'>:</p>
+          </div>
+          <div className='equalone'>
+            <h2 id='current-value'>3.748</h2>
+            <p id="irms-p">AMPERE</p>
+          </div>
+        </div>
+
+        <div className='power-details'>
+          <div className='equalone'>
+            <h2>IRMS</h2>
+            <p id="irms-p">POWER</p>
+          </div>
+          <div>
+            <p className='justhyphen'>:</p>
+          </div>
+          <div className='equalone'>
+            <h2 id='current-value'>7.6</h2>
+            <p id="irms-p">VOLT</p>
+          </div>
+          
+        </div>
+        <div>
+        <div className='power-details'>
+          <CarbonFootprint consumption={55}/>
+        </div>
+        </div>
+
         
+        
+
+
+
     </div>
   );
 }
