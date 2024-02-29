@@ -151,6 +151,7 @@ if (error) {
       </div>
       
       
+      
       <hr></hr>
       
       <h4 style={{marginTop: "-100px"}} id ="sofartodayheading" className='margin-adder'>SO FAR THIS MONTH</h4>
