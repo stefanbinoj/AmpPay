@@ -115,10 +115,7 @@ function Power() {
           
         </div>
         <div>
-        <div className='power-details'>
-          <CarbonFootprint />
-          
-        </div>
+       
         </div>
         <CarbonFootprint consumption={latestUsage.usage_value}/>
 

@@ -22,7 +22,7 @@ const EnergyMeterChart = () => {
     height: '280px',
     border: '1px solid #ccc',
     position: 'relative',
-    left: "520px",
+    left: "240px",
     top: "-10px",
   };
 
