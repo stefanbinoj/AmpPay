@@ -155,7 +155,7 @@ if (error) {
       
       <h4 style={{marginTop: "-100px"}} id ="sofartodayheading" className='margin-adder'>SO FAR THIS MONTH</h4>
       <div className='prediction-detailsbottomsection'>
-      <h3 style={{fontSize: '20px'}}>UNITS CONSUMED = {latestUsage.usage_value}</h3>
+      <h3 style={{fontSize: '20px'}}>CONSUMED = {latestUsage.usage_value} UNITS</h3>
       
     
       

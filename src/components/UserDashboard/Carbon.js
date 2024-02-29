@@ -6,7 +6,7 @@ import './Carbon.css';
 
 const CarbonFootprint = ({ consumption }) => {
   // Calculate carbon footprint based on consumption (example formula)
-  const carbonFootprint = consumption * 0.5; // Example formula, adjust as needed
+  const carbonFootprint = consumption * 0.01; // Example formula, adjust as needed
 
     const iconClassName = consumption > 350 ? 'high-consumption' : 'normal-consumption'
   return (

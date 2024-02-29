@@ -25,8 +25,8 @@ const NavBar2 = () => {
 
             </div>
             <div className="nav container">
-                <a href="#" className="nav-link">Home</a>
-                <a href="#" className="nav-link">About us</a>
+                <a href="http://localhost:3000/" className="nav-link">Home</a>
+                <a href="http://localhost:3000/#about1" className="nav-link">About us</a>
                 
                 <a href="#" className="nav-link">Contact</a>
             </div>
