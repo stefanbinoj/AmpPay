@@ -4,11 +4,11 @@ import axios from 'axios';
 import baseUrl from '../../urls';
 
 function Prediction() {
-  const [predictedbill, setPredictedbill] = useState();
-  const [latestUsage, setLatestUsage] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [latestUsageBill, setLatestUsageBill] = useState(null);
+  const [predictedbill, setPredictedbill] = useState(0);
+  const [latestUsage, setLatestUsage] = useState(0);
+  const [loading, setLoading] = useState(0); //true
+  const [error, setError] = useState(0);//null
+  const [latestUsageBill, setLatestUsageBill] = useState(0);
 
 
 
@@ -76,6 +76,8 @@ useEffect(() => {
   };
 
   fetchData();
+  const interval = setInterval(fetchData,1000);
+  return () => clearInterval(interval);
 }, []);
 
 // Fetch predicted energy consumption
