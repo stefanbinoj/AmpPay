@@ -1,30 +1,23 @@
 import './App.css';
-import NavBar from './components/NavBar/NavBar';
-import Home from './components/Home/Home';
-import About from './components/About/About';
-import Team from './components/Team/Team';
-import Contact from './components/Contact/Contact';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import Dashboard from './components/Dashboard';
+import Main from './components/Main';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import 'aos/dist/aos.css'; // Import AOS CSS
+import AOS from 'aos'; // Import AOS library
 
+// Initialize AOS with default options
 AOS.init();
 
 function App() {
   return (
     <div className="App">
-      <div>
-      <NavBar />
-     <Home />
-      </div>
-     <div>
-     <About />
-     </div>
-     <div data-aos="fade-in" data-aos-delay="200">
-     <Team />
-     </div>
-     <div>
-     <Contact />
-     </div>
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path='/dashboard' element={<Dashboard />} />
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }

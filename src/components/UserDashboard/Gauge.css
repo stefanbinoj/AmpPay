@@ -1,0 +1,74 @@
+.gauge-card {
+    align-items: center;
+    width: 28vw; /* Adjust the width as needed */
+    padding: 15px;
+    padding-top: 0px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 600px;
+    background-color: #FEFEDF;
+    
+  }
+  
+  
+  .gauge-container {
+    margin-top: -15px; /* Adjust the margin-top to position the gauge */
+  }
+  
+  .icon-container {
+    margin-top: -80px;
+    margin-bottom: -35px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .GaugeMainHeading{
+    color:green;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  .gauge-details hr{
+    color:grey;
+    margin: 0px 0px;
+  }
+  
+  .gauge-details{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .gauge-details p{
+    font-size: 12px;
+    margin-right:20px;
+    font-weight: bold;
+    margin-left: auto;
+  }
+  .gauge-details h2{
+    font-size: 18px;
+    margin-right:auto;
+    margin-top: 20px;
+  }
+  .downward-arrow{
+    border-radius: 20px;
+    background-color: aquamarine;
+    
+    display: flex;
+    flex-direction: column ;
+    padding-bottom:10px;
+    
+  }
+  .gauge-details span{
+    color:orangered
+  }
+  .bottom-para{
+    margin-left: 0px !important;
+    margin-right: 35px !important;
+  }

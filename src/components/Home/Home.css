@@ -1,34 +1,133 @@
 /* Home.css */
 
-.content-container {
-    text-align: center;
-    margin: 25px;
-    margin-top: 100px;
-    padding: auto;
-    
-}
-
-h2 {
-    font-size: 24px;
-    color: #333;
-    margin-top: 35px;
-    margin-bottom: 35px;
-    
+.home-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 63px;
 }
 
 img {
+    margin-top: -100px;
     width: 100%;
-    height: 600px;
-    max-width: 900px;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    
+    height: 105vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    opacity: 1; /* Adjust the image opacity as needed */
 }
 
-.quote {
-    font-size: 18px;
-    color: #555;
-    margin-top: 25px;
-    font-weight: bold;
+.intro {
+    position: absolute;
+    top: 20px; /* Adjust top position as needed */
+    left: 20px; /* Adjust left position as needed */
+
 }
+ .intro p {
+    color: #000000;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
+    font-weight: bolder;
+ }
+
+ .home-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 200px;
+    padding-right: 200px;
+    gap: 0px;
+    margin-top: -150px;
+
+ }
+
+
+.home-card {
+    width: 170px;
+    height: 130px;
+    margin-top: -50px;
+    left: 20px; /* Adjust the left position of the card */
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 3; /* Ensure the card is above other content */
+    background: rgba( 255, 255, 255, 0.3 );
+    background: rgba( 255, 255, 255, 0.9 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+}
+
+.home-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.home-card p {
+    font-size: 16px;
+    margin: 0;
+}
+
+#pay-bill-icon {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.home-card img {
+    text-decoration: none;
+    width: 20px;
+}
+.svg-img {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 80px;
+}
+
+.svg-img2 {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -60px;
+}
+
+.home-container p {
+    position: absolute;
+    color: #fff;
+    font-family: "Etelka", sans-serif;
+    font-weight: 900;
+    font-size: 57px;
+    z-index: 1;
+    margin-left: 205px;
+    margin-top: 145px;
+    max-width: 0px; /* Adjust the maximum width as needed */
+    width: 100%; /* Ensure the width is 100% */
+    text-transform: uppercase;
+}
+.home-container h3 {
+    position: absolute;
+    z-index: 1;
+    font-family: "Etelka", sans-serif;
+    margin-top: 520px;
+    margin-left: 243px;
+    color: white;
+}
+
+.home-container a {
+    margin-left: -547px;
+    margin-top: 405px;
+    font-size: 25px;
+    position: absolute;
+    z-index: 5;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg,#eb4356,#ef7a56);
+    padding: 15px;
+    border-bottom-left-radius: 10px; /* Radius for the bottom-left corner */
+    border-bottom-right-radius: 10px;
+    border-radius: 10px;
+}
+
+.home-container a:hover {
+    background: #300c38;
+}
+

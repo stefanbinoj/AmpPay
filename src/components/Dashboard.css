@@ -1,0 +1,62 @@
+.dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   padding-left: 25px;
+   padding-right: 25px;
+   margin-top: 60px;
+}
+@media screen and (max-width: 600px) { /* Adjust the max-width as needed */
+    .dashboard {
+        grid-template-columns: 1fr; /* Change to 1 column layout for smaller screens */
+    }
+}
+
+#container{
+    padding-top: 90px;
+    height: 100%;
+    width:100vw;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite ;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+#container h1{
+    color: #845EC2;
+}
+#container p{
+    color: #4E8397;
+}
+#container hr{
+    color: #FF8066;
+    border: none; /* Remove default border */
+    border-top: 2px solid #FF8066;
+}
+.bottom-section{
+    padding-top: 30px;
+}
+#container h2{
+    color: #D23927;
+}
+#container h3{
+    color: #C34A36;
+}
+#container h5{
+    color: #4E8397;
+}
+#container h6{
+    font-size: 26px;
+    font-weight: bold;
+    color: #303030;
+
+}

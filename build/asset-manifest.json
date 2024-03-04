@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/AmpPay/static/css/main.c691f41f.css",
-    "main.js": "/AmpPay/static/js/main.82620151.js",
-    "static/js/787.d19a0668.chunk.js": "/AmpPay/static/js/787.d19a0668.chunk.js",
-    "static/media/IMG_20231115_173846_Bokeh.jpg": "/AmpPay/static/media/IMG_20231115_173846_Bokeh.9a2115be870d382ff62e.jpg",
-    "static/media/IMG_20240125_122905.jpg": "/AmpPay/static/media/IMG_20240125_122905.f89903f1e512fb061f2a.jpg",
-    "index.html": "/AmpPay/index.html",
-    "main.c691f41f.css.map": "/AmpPay/static/css/main.c691f41f.css.map",
-    "main.82620151.js.map": "/AmpPay/static/js/main.82620151.js.map",
-    "787.d19a0668.chunk.js.map": "/AmpPay/static/js/787.d19a0668.chunk.js.map"
+    "main.css": "/static/css/main.c691f41f.css",
+    "main.js": "/static/js/main.836e9221.js",
+    "static/js/592.2546f978.chunk.js": "/static/js/592.2546f978.chunk.js",
+    "static/media/IMG_20231115_173846_Bokeh.jpg": "/static/media/IMG_20231115_173846_Bokeh.9a2115be870d382ff62e.jpg",
+    "static/media/IMG_20240125_122905.jpg": "/static/media/IMG_20240125_122905.f89903f1e512fb061f2a.jpg",
+    "index.html": "/index.html",
+    "main.c691f41f.css.map": "/static/css/main.c691f41f.css.map",
+    "main.836e9221.js.map": "/static/js/main.836e9221.js.map",
+    "592.2546f978.chunk.js.map": "/static/js/592.2546f978.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c691f41f.css",
-    "static/js/main.82620151.js"
+    "static/js/main.836e9221.js"
   ]
 }

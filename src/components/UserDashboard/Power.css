@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+.power-card {
+    width: 38vw; /* Adjust the width as needed */
+    height: 725px; /* Adjust the height as needed */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top:-35px;
+    background-color: #F1FADA;
+    
+   
+  }
+  .power-details{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+  .power-details h1{
+    color:green;
+    font-size: 30px;
+    margin-left: auto;
+    font-weight: bold;
+    margin-right: auto;
+
+  }
+  .power-card hr{
+    color:grey;
+    margin: 0px 0px;
+  }
+  .margin-issue-resolved{
+    margin-top: -22px;
+  }
+  .power-card p{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    margin:0px;
+    margin-top:10px;
+    
+  }
+  .power-card span{
+    color: orangered;  
+  }
+  .small-timer{
+    margin-left: 10px;
+    margin-top: 8px;
+    margin-right: 10px;
+  }
+  .equalone{
+    width: 49%;
+  }
+ .power-details h2{
+  color:red;
+  font-size: 60px;
+  font-weight: bold;
+}
+#irms-p{
+  margin-right:10px;
+  margin-left: 180px;
+  margin-top: -30px;
+  font-style: italic;
+}
+.justhyphen{
+  font-size: 60px !important;
+  font-weight: 300;
+}
+#current-value{
+  color: black;
+
+}
+#rmshead{
+  color: #005B44 !important;
+}
