@@ -1,14 +1,6 @@
+import "./MainLayout.css"
 import React, { useEffect } from 'react';
-import './Home.css';
-import AOS from 'aos';
-import { Color } from '@kurkle/color';
-import { Link } from 'react-router-dom';
-
-const Home = () => {
-    useEffect(() => {
-        AOS.init(); // Initialize AOS when the component mounts
-    }, []);
-
+const MainLayout = () => {
     return (
         <div className="home-container">
             <div className="image-overlay"></div>
@@ -38,4 +30,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default MainLayout;

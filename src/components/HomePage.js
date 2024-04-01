@@ -1,12 +1,9 @@
+import './HomePage.css'
 import NavBar from "./NavBar/NavBar"
-import Home from "./Home/Home"
+import Home from "./MainLayout/MainLayout"
 import About from "./About/About"
-import Team from "./Team/Team"
-import Contact from "./Contact/Contact"
-import React from 'react';
-import './Main.css'
 
-const Main = () => {
+const HomePage = () => {
     return (
         <div className="main-container">
             
@@ -17,4 +14,4 @@ const Main = () => {
         </div>
     )
 }
-export default Main
+export default HomePage
