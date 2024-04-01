@@ -42,7 +42,7 @@ const Dashboard = () => {
            <Gauge />
            <Power />
            <Prediction/>*/}
-           <NavBar2 />
+           
             <Gauge />
            <Power />
            <Prediction/>

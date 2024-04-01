@@ -1,5 +1,5 @@
+import './Features.css'
 
-import './Features.css';
 const Features = () => {
   const featuresData = [
     {

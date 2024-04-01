@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
 import './NavBar.css';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import img5 from '../../images/WhatsApp Image 2024-02-28 at 2.42.59 PM.jpeg';
 
@@ -32,15 +32,13 @@ const NavBar = () => {
     return (
         <div className={`navbar ${visible ? 'active' : 'hidden'}`}>
             <div className="logo">
-                <img src={img5} alt="Logo" />
+                <h2>logo</h2>
             </div>
-            <div className="nav container">
-                <a href="#" onClick={() => scrollToSection('#home')} className="nav-link">Home</a>
-                <a href="#about1" onClick={() => scrollToSection('#about1')} className="nav-link">About us</a>
+            <div className="nav-links">
+                <a href="#"className="nav-link">Home</a>
+                <a href="#about1" className="nav-link">About</a>
                 <a href="#" className="nav-link">Contact</a>
-            </div>
-            <div className="login-btn">
-                <Link to="/dashboard" className="btn">Login</Link>
+                <Link to="/dashboard" className='nav-link'>Dashboard</Link>
             </div>
         </div>
     );
