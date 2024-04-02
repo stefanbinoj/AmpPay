@@ -109,6 +109,6 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 550;
-    transition: font-weight 0.1s ease;
+    transition: font-weight 0.001s ease;
     
 }

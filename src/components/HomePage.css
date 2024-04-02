@@ -1,0 +1,22 @@
+#loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .loading-animation span {
+    display: inline-block;
+    font-size: 40px;
+    animation: letterAnimation 2.8s infinite alternate; 
+    margin-right: 75px;
+    background: linear-gradient(to right, #000000, #b62727); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #000000;
+  }
+  
+  @keyframes letterAnimation {
+    0% { transform: scale(1); } 
+    100% { transform: scale(3.2); } 
+  }
