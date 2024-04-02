@@ -1,22 +1,49 @@
 #loader {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loading-animation span {
+  display: inline-block;
+  font-size: 40px;
+  background: linear-gradient(to right, #000000, #b62727); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #000000;
+  margin-right: 75px;
+}
+
+.loading-animation span:nth-child(1) {
+  animation: letterAnimation 2s infinite alternate;
+}
+
+.loading-animation span:nth-child(2) {
+  animation: letterAnimation 2s infinite alternate;
+  animation-delay: 0.2s; /* Delay for the second letter */
+}
+
+.loading-animation span:nth-child(3) {
+  animation: letterAnimation 2s infinite alternate;
+  animation-delay: 0.4s; /* Delay for the third letter */
+}
+.loading-animation span:nth-child(4) {
+    animation: letterAnimation 2s infinite alternate;
+    animation-delay: 0.6s; /* Delay for the third letter */
+  }
+  .loading-animation span:nth-child(5) {
+    animation: letterAnimation 2s infinite alternate;
+    animation-delay: 0.8s; /* Delay for the third letter */
+  }
+  .loading-animation span:nth-child(6) {
+    animation: letterAnimation 2s infinite alternate;
+    animation-delay: 1s; /* Delay for the third letter */
   }
 
-  .loading-animation span {
-    display: inline-block;
-    font-size: 40px;
-    animation: letterAnimation 2.8s infinite alternate; 
-    margin-right: 75px;
-    background: linear-gradient(to right, #000000, #b62727); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: #000000;
-  }
-  
-  @keyframes letterAnimation {
-    0% { transform: scale(1); } 
-    100% { transform: scale(3.2); } 
-  }
+/* Add more nth-child styles for other letters as needed */
+
+@keyframes letterAnimation {
+  0% { transform: scale(1); } 
+  100% { transform: scale(3.2); } 
+}
