@@ -9,7 +9,7 @@ const HomePage = () => {
     useEffect(() => {
       const timer = setTimeout(() => {
         setLoading(false);
-      }, 12000);
+      }, 11000);
       return () => clearTimeout(timer);
     }, []);
 
