@@ -28,16 +28,16 @@
   animation-delay: 0.4s; 
 }
 .loading-animation span:nth-child(4) {
-    animation: letterAnimation 2s infinite alternate;
-    animation-delay: 0.6s;
+  animation: letterAnimation 2s infinite alternate;
+  animation-delay: 0.6s;
 }
 .loading-animation span:nth-child(5) {
-    animation: letterAnimation 2s infinite alternate;
-    animation-delay: 0.8s;
+  animation: letterAnimation 2s infinite alternate;
+  animation-delay: 0.8s;
 }
 .loading-animation span:nth-child(6) {
-    animation: letterAnimation 2s infinite alternate;
-    animation-delay: 1s; 
+  animation: letterAnimation 2s infinite alternate;
+  animation-delay: 1s; 
 }
 
 @keyframes letterAnimation {
