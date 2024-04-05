@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import baseUrl from '../../urls';
 
-function Prediction() {
+function Prediction({setLoading1}) {
   const [predictedbill, setPredictedbill] = useState(0);
   const [latestUsage, setLatestUsage] = useState(0);
   const [loading, setLoading] = useState(0); //true
@@ -70,6 +70,7 @@ useEffect(() => {
       setLatestUsage(latest);
     } catch (error) {
       setError(error.message);
+      
     } finally {
       setLoading(false);
     }
