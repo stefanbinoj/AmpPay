@@ -3,6 +3,9 @@ import NavBar from "./NavBar/NavBar"
 import Home from "./MainLayout/MainLayout"
 import About from "./About/About"
 import React, {useState,useEffect} from 'react'
+import CarouselComponent from './Carousel'
+import Carousel from './Carousel'
+import IndividualIntervalsExample from './Carousel'
 
 const HomePage = () => {
     const [loading,setLoading] = useState(true);
@@ -24,7 +27,7 @@ const HomePage = () => {
       ) : (
           <div>
             <NavBar />
-            
+            <IndividualIntervalsExample />
             <About />
           </div>
       )}
