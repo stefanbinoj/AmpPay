@@ -6,12 +6,16 @@
     align-items: center;
     z-index: 100;
     transition: top 0.5s;
-    margin: 20px 0;
+    height: 4rem;
+    background-color: #f0e9e9;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.4);
 }
+
 
 
 .navbar.active {
     top: 0;
+    
 }
 
 .navbar.hidden {
