@@ -1,11 +1,10 @@
 .carousel {
     margin-top: 8vh;
     position: relative;
-    background-image: url('/Users/arjun/Desktop/react/AmpPay/src/images/pexels-tatan-zuleta-17022636-3.jpg');
     background-size: cover; 
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #f0f0f0;
+    background-color: rgba(0, 0, 0, 0.5); 
     position: relative;
     backdrop-filter: blur(0px);
 }
@@ -18,9 +17,8 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); 
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(0px); 
     z-index: -1; 
-    
 }
 
 .carousel-indicators {
@@ -48,7 +46,7 @@
 }
 
 .carousel-indicators button:hover {
-    background-color: #aaa; /* Hover color */
+    background-color: #aaa; 
 }
 
 .carousel-inner {
@@ -132,5 +130,57 @@
 
 .carousel-item.active {
     display: block;
+}
+
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOutToLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slideOutToRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.carousel-item.prev {
+    animation: slideOutToLeft 1s ease forwards;
+}
+
+.carousel-item.active {
+    animation: slideInFromRight 1s ease forwards;
+}
+
+.carousel-item.next {
+    animation: slideOutToLeft 1s ease forwards;
+}
+
+.carousel-item1.active {
+    animation: slideInFromLeft 1s ease forwards;
 }
 
