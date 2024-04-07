@@ -5,6 +5,7 @@
    padding-left: 25px;
    padding-right: 25px;
    margin-top: 60px;
+
 }
 @media screen and (max-width: 600px) { /* Adjust the max-width as needed */
     .dashboard {

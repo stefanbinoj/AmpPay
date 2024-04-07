@@ -1,27 +1,30 @@
 import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from "../images/IMG_20240125_122905.jpg"
-import ExampleCarouselImage1 from "../images/pexels-mikhail-nilov-6963032.jpg"
+import CarouselImg1 from "../images/pexels-created-stories-11481760.jpg"
+import CarouselImg2 from "../images/pexels-olha-dobosh-4113930.jpg"
+import CarouselImg3 from "../images/pexels-tatan-zuleta-17022636-3.jpg"
+
+
 import './Carousel.css'
 
 function IndividualIntervalsExample() {
   return (
     <Carousel nextIcon={<CustomNextButton />} prevIcon={<CustomPrevButton />}>
       <Carousel.Item interval={2000}>
-        <img src={ExampleCarouselImage} alt="First slide" />
+        <img src={CarouselImg1} alt="First slide" />
         <Carousel.Caption>
           <h3>Transforming Energy Habits</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={2000}>
-        <img src={ExampleCarouselImage1} alt="Second slide" />
+        <img src={CarouselImg2} alt="Second slide" />
         <Carousel.Caption>
           <h3>Transforming Energy Habits</h3>
           <p>Turn the tide on high energy bills and make informed decisions about your consumption with AmpPay.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={2000}>
-        <img src={ExampleCarouselImage} alt="Third slide" />
+        <img src={CarouselImg3} alt="Third slide" />
         <Carousel.Caption>
           <h3>Third slide label</h3>
           <p>

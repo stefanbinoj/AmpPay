@@ -4,26 +4,26 @@
 
 .carousel-indicators {
     position: absolute;
-    bottom: 40px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-    display: flex; /* Align indicators horizontally */
-    justify-content: center; /* Center the indicators horizontally */
+    display: flex; 
+    justify-content: center;
 }
 
 .carousel-indicators button {
-    width: 20px; /* Adjusted width */
-    height: 4px; /* Adjusted height for a thin rectangle */
+    width: 30px;
+    height: 4px;
     border: none;
     background-color: rgba(6, 5, 5, 0.5);
     margin: 0 5px;
     cursor: pointer;
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    transition: background-color 0.3s;
 }
 
 .carousel-indicators button.active {
-    background-color: #000000; /* Active indicator color */
+    background-color: #000000; 
 }
 
 .carousel-indicators button:hover {
@@ -86,11 +86,11 @@
 }
 
 .carousel-custom-next {
-    right: 30px;
+    right: 20px;
 }
 
 .carousel-custom-prev {
-    left: 30px;
+    left: 20px;
 }
 
 .carousel-custom-next:hover .custom-button-path,
@@ -101,3 +101,12 @@
 .carousel span {
     display: none;
 }
+
+.carousel-item {
+    display: none;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
