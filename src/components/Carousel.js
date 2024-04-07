@@ -9,21 +9,26 @@ import './Carousel.css'
 function IndividualIntervalsExample() {
   return (
     <Carousel nextIcon={<CustomNextButton />} prevIcon={<CustomPrevButton />}>
-      <Carousel.Item interval={2000}>
+      <Carousel.Item interval={3000}>
+        <div className='carousel' style={{backgroundImage: `url(${CarouselImg1})`}}>
         <img src={CarouselImg1} alt="First slide" />
         <Carousel.Caption>
           <h3>Transforming Energy Habits</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
+        </div>
       </Carousel.Item>
-      <Carousel.Item interval={2000}>
+      <Carousel.Item interval={3000}>
+        <div className='carousel' style={{backgroundImage: `url(${CarouselImg2})`}}>
         <img src={CarouselImg2} alt="Second slide" />
         <Carousel.Caption>
           <h3>Transforming Energy Habits</h3>
           <p>Turn the tide on high energy bills and make informed decisions about your consumption with AmpPay.</p>
         </Carousel.Caption>
+        </div>
       </Carousel.Item>
-      <Carousel.Item interval={2000}>
+      <Carousel.Item interval={3000}>
+        <div className='carousel' style={{backgroundImage: `url(${CarouselImg3})`}}>
         <img src={CarouselImg3} alt="Third slide" />
         <Carousel.Caption>
           <h3>Third slide label</h3>
@@ -31,6 +36,7 @@ function IndividualIntervalsExample() {
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p>
         </Carousel.Caption>
+        </div>
       </Carousel.Item>
     </Carousel>
   );
