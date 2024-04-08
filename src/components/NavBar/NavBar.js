@@ -46,7 +46,7 @@ const NavBar = () => {
             <div className="nav-links">
                 <a onClick={(event) => scrollSection('home', event)} href="#"className="nav-link">Home</a>
                 <a onClick={(event) => scrollSection('about1', event)} href="#about1" className="nav-link">About</a>
-                <a href="#" className="nav-link">Contact</a>
+                <a onClick={(event) => scrollSection('contact',event)} href="#" className="nav-link">Contact</a>
                 <Link to="/dashboard" className='nav-link'>Dashboard</Link>
             </div>
         </div>
