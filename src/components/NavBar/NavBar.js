@@ -4,6 +4,15 @@ import { Link } from 'react-router-dom';
 import img5 from '../../images/WhatsApp Image 2024-02-28 at 2.42.59 PM.jpeg';
 
 const NavBar = () => {
+    const scrollSection = (id, event) => {
+        event.preventDefault();
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+        }else {
+            window.scrollTo({top:'0',behavior:'smooth'});
+        }
+    };
     const scrollToSection = (sectionId) => {
         const section = document.querySelector(sectionId);
         if (section) {
@@ -35,8 +44,8 @@ const NavBar = () => {
                 <h2>logo</h2>
             </div>
             <div className="nav-links">
-                <a href="#"className="nav-link">Home</a>
-                <a href="#about1" className="nav-link">About</a>
+                <a onClick={(event) => scrollSection('home', event)} href="#"className="nav-link">Home</a>
+                <a onClick={(event) => scrollSection('about1', event)} href="#about1" className="nav-link">About</a>
                 <a href="#" className="nav-link">Contact</a>
                 <Link to="/dashboard" className='nav-link'>Dashboard</Link>
             </div>
