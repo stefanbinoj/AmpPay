@@ -10,9 +10,7 @@ function Togglebar() {
             <a href='#'>GRAPH</a>
             <a href='#'>LEADERBOARDS</a>
             </div>
-            <div className='chart-contaniner'>
-            <EnergyMeterChart />
-            </div>
+            
             
         </div>
         
