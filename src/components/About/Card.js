@@ -1,9 +1,18 @@
+import { useEffect } from 'react';
 import './Card.css';
-
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 const Card = () => {
+  useEffect(() => {
+    AOS.init({
+      duration:1500,
+      once: false,
+      offset:200,
+    });
+  }, []);
   return (
     <div className="card-container">
-      <div className="card left">
+      <div className="card left" data-aos="fade-right">
         <h3>Our Story</h3>
         <p>
         AmpPay's journey is one marked by innovation and dedication. From the inception of our idea to the implementation of cutting-edge solutions, we've overcome challenges and reached key milestones. We are driven by a passion to create a positive impact on energy consumption.
@@ -15,7 +24,7 @@ const Card = () => {
         </div>
       </div>
 
-      <div className="card right">
+      <div className="card right" data-aos="fade-left">
         <h3>Our Vision</h3>
         <p>
         At AmpPay, we envision a future where energy efficiency is seamlessly integrated into everyday life. Our commitment to ongoing improvement and innovation fuels this vision. We're not just managing energy; we're shaping a sustainable way of living.
