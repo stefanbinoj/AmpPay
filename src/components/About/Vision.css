@@ -1,0 +1,74 @@
+.vision-container {
+    position: relative;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: black;
+    height: 150vh;
+  }
+  
+  .vision-header {
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .vision-title {
+    text-align: left;
+    font-size: 4.5em;
+    opacity: 0;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    background: linear-gradient(to right, #ffffff, #282828); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+  
+
+  .vision-inner {
+    padding: 100px 140px 0 100px;
+  }
+  
+  .vision-intro{
+    padding-top: 100px;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    max-width: 420px;
+    color: white;
+    padding-bottom: 20px;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  
+  }
+
+  .vision-intro p {
+    line-height: 1.4;
+    font-size: 1.3rem;
+    color: white;
+  }
+
+  @keyframes curved-fade {
+    0% {
+      transform: translateY(-50%) translateX(-50%) translateZ(-50px) rotateX(-90deg) rotateY(-90deg) rotateZ(-90deg) scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%) translateX(0%) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .active_header {
+    animation: curved-fade 2s ease-in-out;
+    opacity: 1;
+  }
+  
+
+  
