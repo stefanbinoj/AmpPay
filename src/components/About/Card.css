@@ -11,7 +11,6 @@
   }
   
   .card {
-    
     font-family: 'Roboto', sans-serif; /* Add a specific font-family */
     position: relative;
     width: 350px; /* Adjusted width for better balance */
@@ -28,28 +27,27 @@
     justify-content: space-between;
     margin: 0 10px;
     background: rgba(206, 164, 164, 0.15);
-box-shadow: 0 8px 32px 0 rgba(26, 37, 196, 0.37);
-backdrop-filter: blur( 5px );
--webkit-backdrop-filter: blur( 5px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 8px 32px 0 rgba(26, 37, 196, 0.37);
   }
+  .card:hover {
+    transform: scale(1.5); /* Change to a different background color */
+  }
+  
+
+  
   
   .card h3 {
     font-size: 30px;
-    margin-bottom: 10px; /* Add some space below the heading */
   }
   
   .card p {
-    
     font-size: 20px;
     color: #000000;
-    line-height: 1.4; /* Adjust line-height for better readability */;
+    line-height: 1.4;
+  }
+
+  .card:hover {
+    transform: scale(1.05); /* Scale up by 5% on hover */
   }
   
-  .card:hover {
-    transform: scale(1.05);
-  }
-  .card-right{
-    margin-left: 30px;
-  }
+
