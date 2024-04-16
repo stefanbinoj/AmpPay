@@ -54,6 +54,20 @@
     color: white;
   }
 
+  .vision-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 250px;
+  }
+
+  .vision-img img {
+    width: 500px;
+    padding-top: 70px;
+  
+  }
+
   @keyframes curved-fade {
     0% {
       transform: translateY(-50%) translateX(-50%) translateZ(-50px) rotateX(-90deg) rotateY(-90deg) rotateZ(-90deg) scale(0);
