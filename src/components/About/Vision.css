@@ -39,10 +39,10 @@
     display: flex;
     align-items: center;
     text-align: left;
-    max-width: 420px;
+    max-width: 470px;
     color: white;
     padding-bottom: 20px;
-    font-family: "Lora", serif;
+    font-family: 'Courier New', Courier, monospace;
     font-optical-sizing: auto;
     font-style: normal;
   
