@@ -30,19 +30,19 @@
   
 
   .vision-inner {
-    padding: 100px 140px 0 100px;
+    padding: 100px 140px 0 140px;
   }
   
   .vision-intro{
-    padding-top: 100px;
+    padding-top: 30px;
     height: max-content;
     display: flex;
     align-items: center;
     text-align: left;
-    max-width: 420px;
+    max-width: 470px;
     color: white;
     padding-bottom: 20px;
-    font-family: "Lora", serif;
+    font-family: 'Courier New', Courier, monospace;
     font-optical-sizing: auto;
     font-style: normal;
   
@@ -52,6 +52,20 @@
     line-height: 1.4;
     font-size: 1.3rem;
     color: white;
+  }
+
+  .vision-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 250px;
+  }
+
+  .vision-img img {
+    width: 500px;
+    padding-top: 30px;
+  
   }
 
   @keyframes curved-fade {
