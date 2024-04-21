@@ -10,9 +10,7 @@ const Value = (() => {
         });
 
     },[]);
-    return(
-        <div>
-            <h1 className='section-heading'>Our Values</h1>
+    return(        
         <div className='values-container'>
             <div className='values'>
                 <div className='value left' data-aos="fade-right" data-aos-offset="140">
@@ -40,7 +38,6 @@ const Value = (() => {
                     <p>We foster collaboration and teamwork to achieve common goals.</p>
                 </div>
             </div>
-        </div>
         </div>
     )
 })

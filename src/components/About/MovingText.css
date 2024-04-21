@@ -1,0 +1,43 @@
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: aliceblue;
+  }
+  
+  .marquee {
+    background: linear-gradient(to right, #000000, #b62727); 
+    --gap: 12rem;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    gap: var(--gap);
+    height: 4.5rem;
+  }
+  
+  .marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-around;
+    gap: var(--gap);
+    min-width: 100%;
+  }
+  
+  
+  .marquee__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ul { padding-left: 0; }
+
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(calc(-100% - var(--gap))); }
+  }
+
+  .enable-animation .marquee__content {
+    animation: scroll 25s linear infinite;
+  }
