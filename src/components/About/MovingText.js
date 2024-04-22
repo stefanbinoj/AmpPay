@@ -9,39 +9,39 @@ const MovingText = () => {
             <h2>INNOVATION</h2>
             </div>
             <div className=" marquee__item">
-            <h2>Transparency</h2>
+            <h2>TRANSPARENCY</h2>
             </div>
             <div className=" marquee__item">
-            <h2>Customer-Centricity</h2>
+            <h2>CUSTOMER-CENTRICITY</h2>
             </div>
             <div className=" marquee__item">
-            <h2>Sustainability</h2>
+            <h2>SUSTAINABILITY</h2>
             </div>
             <div className=" marquee__item">
-            <h2>Quality</h2>
+            <h2>QUALITY</h2>
             </div>
             <div className=" marquee__item">
-            <h2>Collaboration</h2>
+            <h2>COLLABORATION</h2>
             </div>
           </ul>
           <ul aria-hidden="true" className="marquee__content">
           <div className=" marquee__item">
-            <h2>Innovation</h2>
+            <h2>INNOVATION</h2>
             </div>
             <div className=" marquee__item">
-            <h2>Transparency</h2>
+            <h2>TRANSPARENCY</h2>
             </div>
             <div className=" marquee__item">
-            <h2>Customer-Centricity</h2>
+            <h2>CUSTOMER-CENTRICITY</h2>
             </div>
             <div className=" marquee__item">
-            <h2>Sustainability</h2>
+            <h2>SUSTAINABILITY</h2>
             </div>
             <div className=" marquee__item">
-            <h2>Quality</h2>
+            <h2>QUALITY</h2>
             </div>
             <div className=" marquee__item">
-            <h2>Collaboration</h2>
+            <h2>COLLABORATION</h2>
             </div>
           </ul>
         </div>
