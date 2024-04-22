@@ -1,6 +1,5 @@
 import './Vision.css'
 import { useState,useEffect, useRef } from 'react';
-import bgImg from '../../images/_edb5ef60-66b3-4531-89a5-5e0a8779fce0.jpeg';
 
 const Vision = () => {
     const [visibleHeader, setVisibleHeader] = useState(false);
