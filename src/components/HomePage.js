@@ -1,6 +1,6 @@
 import './HomePage.css'
 import NavBar from "./NavBar/NavBar"
-import Home from "./MainLayout/MainLayout"
+
 import About from "./About/About"
 import React, {useState,useEffect} from 'react'
 import CarouselComponent from './Carousel'
