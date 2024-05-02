@@ -1,5 +1,5 @@
 .carousel {
-    margin-top: 8vh;
+
     position: relative;
     background-size: cover; 
     background-position: center;
@@ -20,6 +20,7 @@
     background-color: rgba(0, 0, 0, 0.5); 
     backdrop-filter: blur(10px); 
     z-index: -1; 
+    width: 100%;
 }
 
 .carousel-indicators {
