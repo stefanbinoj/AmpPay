@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom';
 import img5 from '../../images/WhatsApp Image 2024-02-28 at 2.42.59 PM.jpeg';
 
 const NavBar = () => {
+    const [isOpen,setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
     const scrollSection = (id, event) => {
         event.preventDefault();
         const element = document.getElementById(id);
@@ -43,11 +48,14 @@ const NavBar = () => {
             <div className="logo">
                 <h2>logo</h2>
             </div>
-            <div className="nav-links">
+            <div className={`nav-links ${isOpen ? 'open' : ''}`}>
                 <a onClick={(event) => scrollSection('home', event)} href="#"className="nav-link">Home</a>
-                <a onClick={(event) => scrollSection('about1', event)} href="#about1" className="nav-link">About</a>
+                <a onClick={(event) => { scrollSection('about1', event); toggleMenu(); }} href="#about1" className="nav-link">About</a>
                 <a onClick={(event) => scrollSection('contact',event)} href="#" className="nav-link">Contact</a>
                 <Link to="/dashboard" className='nav-link'>Dashboard</Link>
+            </div>
+            <div className='menu-toggle' onClick={toggleMenu}>
+                ☰ 
             </div>
         </div>
     );
