@@ -3,7 +3,7 @@
     text-align: center;
     font-family: sans-serif;
     background-color: black;
-    height: 150vh;
+    height: auto;
   }
   
   .vision-header {
@@ -58,8 +58,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    column-gap: 250px;
+    justify-content: space-between;
   }
 
   .vision-img img {
@@ -83,6 +82,39 @@
     animation: curved-fade 2s ease-in-out;
     opacity: 1;
   }
-  
+  @media screen and (max-width: 1024px) {
+    .vision-bottom {
+      flex-direction: column;
+      border: 1px solid rgb(86, 82, 82);
+      row-gap: 50px;
+    }
 
+
+  .vision-inner {
+    padding: 10px 50px 50px 50px;
+  }
+
+  .vision-intro {
+    max-width: 700px;
+  }
+
+  .vision-intro p{
+    padding-top: 20px;
+    line-height: 1.5;
+    font-size: 1.5rem;
+  }
+
+  .vision-img img {
+    padding-bottom: 100px;
+    width: 650px;
   
+  }
+
+  .vision-bottom hr {
+    width: 100%;
+    border: 1px solid rgb(86, 82, 82);
+    margin: 0;
+  }
+
+
+  }
