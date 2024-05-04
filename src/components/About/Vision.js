@@ -32,6 +32,7 @@ const Vision = () => {
           <div className="vision-intro">
             <p>Welcome to AmpPay – your gateway to empowered energy management. Founded by a team passionate about sustainability, AmpPay offers a comprehensive solution for tracking, managing, and optimizing energy consumption. What sets us apart is our commitment to innovation and our dedication to empowering users to make informed decisions about their energy usage. At AmpPay, we value sustainability, efficiency, and community, and our platform offers real-time tracking, predictive insights, and personalized recommendations to help you achieve your energy goals. Explore AmpPay today and take control of your energy consumption like never before.</p>
           </div>
+          <hr></hr>
           <div className='vision-img'>
             <img src="https://adamsyy.github.io/tedx-2022/metamorphosis-removebg.png"/>
           </div>
