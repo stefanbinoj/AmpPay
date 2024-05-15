@@ -6,6 +6,7 @@ import React, {useState,useEffect} from 'react'
 import CarouselComponent from './Carousel'
 import Carousel from './Carousel'
 import IndividualIntervalsExample from './Carousel'
+import Carousel1 from './Carousel1'
 
 const HomePage = () => {
     const [loading,setLoading] = useState(true);
@@ -27,7 +28,7 @@ const HomePage = () => {
       ) : (
           <div>
             <NavBar />
-            <IndividualIntervalsExample />
+            <Carousel1 />
             <About />
           </div>
       )}

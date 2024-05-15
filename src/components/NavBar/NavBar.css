@@ -1,7 +1,7 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
     width: 100%;
     align-items: center;
     z-index: 100;
@@ -20,12 +20,14 @@
 
 .navbar.active {
     top: 0;
-    
+    transition: top 1s ease; /* Add transition for smooth animation */
 }
 
 .navbar.hidden {
-    top: -5rem;
+    top: -8vh; /* Change to the height of your navbar */
+    transition: top 1s ease; /* Add transition for smooth animation */
 }
+
 
 
 @keyframes slideDown {
@@ -160,3 +162,4 @@
 
 
 }
+
