@@ -34,14 +34,15 @@ const NavBar = () => {
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollPos = window.pageYOffset;
-            setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 80);
+            const visible = prevScrollPos > currentScrollPos || currentScrollPos < 80;
+            setVisible(visible);
             setPrevScrollPos(currentScrollPos);
         };
-
+    
         window.addEventListener('scroll', handleScroll);
-
+    
         return () => window.removeEventListener('scroll', handleScroll);
-    }, [prevScrollPos, visible]);
+    }, [prevScrollPos]);
 
     return (
         <div className={`navbar ${visible ? 'active' : 'hidden'}`}>
