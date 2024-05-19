@@ -25,6 +25,7 @@ const Vision = () => {
     return (
         <div id='vision' className="vision-container" ref={sectionRef}>
             <div className='vision-inner'>
+            <h1 className={`vision-title ${visibleHeader ? 'active_header' : 'hidden'}`}>About</h1>
           <header className="vision-header">
             <p className={`vision-title ${visibleHeader ? 'active_header' : 'hidden'}`}>We’re AmpPay, Lighting the Way to Energy Efficiency</p>
           </header>

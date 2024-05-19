@@ -1,12 +1,8 @@
 /* Features.css */
 
 .features-container {
-  cursor: default;
-    text-align: center;
-    margin-top: -200px;
-    
-    
-   
+    display: flex;
+    flex-direction: column;
   }
   
   .features-list {
