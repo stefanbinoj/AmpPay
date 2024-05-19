@@ -1,11 +1,7 @@
 import './HomePage.css'
 import NavBar from "./NavBar/NavBar"
-
 import About from "./About/About"
 import React, {useState,useEffect} from 'react'
-import CarouselComponent from './Carousel'
-import Carousel from './Carousel'
-import IndividualIntervalsExample from './Carousel'
 import Carousel1 from './Carousel1'
 
 const HomePage = () => {

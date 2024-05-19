@@ -1,10 +1,8 @@
 .carousel-container {
     margin-top: 8vh;
-    height: 100vh;
+    height: 93vh;
     width: 100%;
-    position: relative; 
-
-    
+    position: relative;     
 }
 
 .carousel-img {
@@ -26,3 +24,39 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5); 
 }
+.shape-container {
+    display: flex;
+    flex-direction: column;
+    top: 45%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 100%;
+    height: 50vh; 
+    justify-content: space-between;
+  
+}
+
+.shape {
+    width: 100%;
+    height: 300px;
+   
+}
+
+
+
+
+.material-symbols--report-off-outline {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='m19.8 16.95l-1.45-1.4l.65-.65V9.1L14.9 5H9.1l-.65.65l-1.4-1.45L8.25 3h7.5L21 8.25v7.45zM13 10.2V7h-2v1.2zm7.5 13.1l-3.55-3.55l-1.2 1.25h-7.5L3 15.7V8.25l1.2-1.2L.7 3.5l1.4-1.4l19.8 19.8zM9.1 19h5.8l.65-.65l-9.9-9.9L5 9.1v5.8zm2.9-2q-.425 0-.712-.288T11 16t.288-.712T12 15t.713.288T13 16t-.288.713T12 17m-1.4-3.6'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+ 
+  }

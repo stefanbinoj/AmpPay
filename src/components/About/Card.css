@@ -1,6 +1,7 @@
 /* CardContainer.css */
 
 .card-container {
+  background-color: #000000;
   cursor: default;
     padding-top: 100px;
     display: flex;
