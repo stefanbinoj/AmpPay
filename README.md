@@ -10,9 +10,9 @@
    - [Hardware Details](#hardware-details)
    - [Software Stack](#software-stack)
 7. [Additional Resources](#additional-resources)
-8. [Contributing](#contributing)
-9. [License](#license)
-10. [Contact Information](#contact-information)
+
+8. [License](#license)
+9. [Contact Information](#contact-information)
 
 ## Introduction
 
@@ -104,21 +104,12 @@ This combination of hardware and software components allows AmpPay to deliver ac
 
 *Figure 1: AmpPay Hardware Component*
 
-## Contributing
-
-We welcome contributions from the community to enhance AmpPay's capabilities. To contribute:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/YourFeatureName`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature/YourFeatureName`)
-5. Open a Pull Request
-
-Please ensure that your code adheres to our coding standards and is accompanied by appropriate documentation and test cases.
 
 ## License
 
 This project is licensed under the MIT License. For more details, please refer to the [LICENSE.md](LICENSE.md) file in the repository.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ## Contact Information
 
