@@ -98,7 +98,6 @@ This combination of hardware and software components allows AmpPay to deliver ac
 ## Additional Resources
 
 - [Detailed Project Documentation (PDF)](https://docs.google.com/viewer?url=https://github.com/stefanbinoj/AmpPay/raw/main/build/static/media/Document%20from%20STEFAN.pptx)
-- [Project Demonstration Video](https://drive.google.com/file/d/1Zw0Q9gPjTmDppUpUMJARK9iXn8RDoCZK/view)
 
 <img src="https://github.com/stefanbinoj/AmpPay/raw/main/build/static/media/Screenshot%20from%202024-07-12%2010-27-38.png" alt="AmpPay Hardware" width="500"/>
 
