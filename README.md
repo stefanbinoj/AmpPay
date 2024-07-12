@@ -7,9 +7,10 @@
 4. [Key Features](#key-features)
 5. [Objectives](#objectives)
 6. [Technical Specifications](#technical-specifications)
+   - [Hardware Details](#hardware-details)
+   - [Software Stack](#software-stack)
 7. [Additional Resources](#additional-resources)
-
-8.[Contributing](#contributing)
+8. [Contributing](#contributing)
 9. [License](#license)
 10. [Contact Information](#contact-information)
 
@@ -79,13 +80,13 @@ AmpPay combines robust hardware and sophisticated software to deliver a comprehe
 | Power Supply Unit       | Data Visualization Libraries |
 | Custom PCB              | Cloud Hosting Services |
 
-### Hardware Details:
+### Hardware Details
 - **Arduino Uno**: The brain of our hardware setup, processing sensor data and communicating with the software backend.
 - **Current and Voltage Sensors**: High-precision sensors for accurate energy measurements.
 - **Wi-Fi Module**: Enables real-time data transmission to our cloud servers.
 - **Custom PCB**: Designed for optimal performance and reliability.
 
-### Software Stack:
+### Software Stack
 - **React**: Powers our responsive and user-friendly frontend interface.
 - **Django**: Provides a robust backend framework for data processing and API endpoints.
 - **Postman**: Used for comprehensive API testing and documentation.
@@ -96,13 +97,12 @@ This combination of hardware and software components allows AmpPay to deliver ac
 
 ## Additional Resources
 
-- <a href="https://github.com/stefanbinoj/AmpPay/raw/main/build/static/media/Document%20from%20STEFAN.pptx" target="_blank">Detailed Project Documentation (PDF)</a>
-- <a href="https://github.com/stefanbinoj/AmpPay/raw/main/build/static/media/Video%20from%20STEFAN.mp4" target="_blank">Project Demonstration Video</a>
+- [Detailed Project Documentation (PDF)](https://docs.google.com/viewer?url=https://github.com/stefanbinoj/AmpPay/raw/main/build/static/media/Document%20from%20STEFAN.pptx)
+- [Project Demonstration Video](https://drive.google.com/file/d/1Zw0Q9gPjTmDppUpUMJARK9iXn8RDoCZK/view)
 
 <img src="https://github.com/stefanbinoj/AmpPay/raw/main/build/static/media/Screenshot%20from%202024-07-12%2010-27-38.png" alt="AmpPay Hardware" width="500"/>
 
 *Figure 1: AmpPay Hardware Component*
-
 
 ## Contributing
 
@@ -124,7 +124,6 @@ This project is licensed under the MIT License. For more details, please refer t
 
 For inquiries or support, please contact:
 
-[Stefan Binoj]
-Email: [stefan.binoj.007@gmail.com]
+Stefan Binoj
+Email: stefan.binoj.007@gmail.com
 Project Repository: [https://github.com/stefanbinoj/AmpPay](https://github.com/stefanbinoj/AmpPay)
-
