@@ -14,7 +14,7 @@
 8. [License](#license)
 9. [Contact Information](#contact-information)
 
-## Introduction
+## Introduction 
 
 Hey there! Let's talk about AmpPay - it's not just another energy monitoring system, it's your new best friend in the world of energy management. Imagine having a smart, always-on assistant that keeps an eye on every watt of electricity you use. That's AmpPay for you!
 
