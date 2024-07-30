@@ -1,4 +1,4 @@
-# AmpPay: Advanced Energy Monitoring and Management System
+# AmpPay: Advanced Energy Monitoring and Management System 
 
 ## Table of Contents
 1. [Introduction](#introduction)
